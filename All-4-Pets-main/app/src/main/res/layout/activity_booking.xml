@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctors.Activities.Booking"
+    android:background="@drawable/color3">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/appointment_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/appoint_booking"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/back_arrow"
+        android:onClick="redirecttoshowmore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/backarrow"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/tv_background"
+        android:layout_width="390dp"
+        android:layout_height="440dp"
+        android:background="#cabbe9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <!--    app:srcCompat="@drawable/ic_launcher_background"-->
+
+    <ImageView
+        android:id="@+id/img_vet8"
+        android:layout_width="173dp"
+        android:layout_height="141dp"
+        android:contentDescription="@string/vet_image6"
+        android:src="@drawable/doc2"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dr.(Ms.)P.N.C.Fernando"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_spec3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toEndOf="@+id/img_vet8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.768" />
+
+    <TextView
+        android:id="@+id/tv_spec3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Veterinary Neurosurgery"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/img_vet8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/tv_patient"
+        android:layout_width="291dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="408dp"
+        android:text="@string/tv_patient"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="324dp"
+        android:layout_height="59dp"
+        android:text="@string/btn_confirm"
+        app:backgroundTint="#80700483"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
+        app:layout_constraintVertical_bias="0.948"
+        tools:ignore="TextContrastCheck" />
+
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:onClick="detailed"
+        android:text="Edit"
+        app:backgroundTint="#80700483"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
+        app:layout_constraintVertical_bias="0.793"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_delete1"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:text="Delete"
+        app:backgroundTint="#80700483"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_patient"
+        app:layout_constraintVertical_bias="0.783"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+
+        android:layout_width="262dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="68dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_background">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Name of the customer"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Address of the customer"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Email of the customer"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Date of the customer"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Time of the customer"
+            android:textSize="19dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="101dp"
+        android:layout_height="234dp"
+
+        android:layout_marginTop="68dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_background">
+
+        <TextView
+            android:id="@+id/tv_cus_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Name  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+        <TextView
+            android:id="@+id/tv_cus_address"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Address  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_cus_email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Email  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_cus_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Date  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_cus_time"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Time  :-  "
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

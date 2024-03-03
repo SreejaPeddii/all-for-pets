@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/pet7"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+
+        android:id="@+id/btn_category"
+        android:layout_width="353dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#9F601D6C"
+        android:onClick="gotofirstpage"
+        android:text="PET SHOP"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="353dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#9F601D6C"
+        android:onClick="gotofinddaycarepage"
+        android:text="@string/btn_order"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_services"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+
+    <Button
+        android:id="@+id/btn_services"
+        android:layout_width="348dp"
+        android:layout_height="86dp"
+        android:backgroundTint="#9F601D6C"
+        android:onClick="gotofindvet"
+        android:text="@string/btn_services"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_ratings"
+        android:layout_width="348dp"
+        android:layout_height="86dp"
+        android:backgroundTint="#9F601D6C"
+        android:onClick="gotoratingspage"
+        android:text="@string/btn_ratings"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_services"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/txt_topic"
+        android:layout_width="224dp"
+        android:layout_height="39dp"
+        android:text="@string/txt_topic"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="176dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="76dp"
+        android:background="#9F601D6C"
+        android:text="Profile"
+        android:onClick="gotoprofile"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ratings"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

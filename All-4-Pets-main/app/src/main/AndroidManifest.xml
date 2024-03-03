@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.All4Pets">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".Doctors.Activities.Booking"
+            android:exported="true" />
+        <activity
+            android:name=".Doctors.Activities.CusDetailed"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.Payment"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.AddAddress"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Daycare_ShowMoreNew"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.BookingFormDC"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.ChangeBookingd"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Daycare_Booking_Form"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.CAddress"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.Cart"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.ShowSup"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.ShowAllItems"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.ShowAllPets"
+            android:exported="true" />
+        <activity
+            android:name=".Ratings.EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Confirmed_DaycareBooking"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Book_Daycare"
+            android:exported="true" />
+        <activity
+            android:name=".Ratings.View_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ratings.FAQ"
+            android:exported="true" />
+        <activity
+            android:name=".Ratings.View_Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".Ratings.Add_Review"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Daycare_ShowMore"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Fav_DaycareList"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Daycare_Results"
+            android:exported="true" />
+        <activity
+            android:name=".Doctors.Activities.Fav_VetList"
+            android:exported="true" />
+        <activity
+            android:name=".Doctors.Activities.Vet_Results"
+            android:exported="true" />
+        <activity
+            android:name=".Doctors.Activities.Vet_ShowMore"
+            android:exported="true" />
+        <activity
+            android:name=".Daycares.Activities.Find_Daycare"
+            android:exported="true" />
+        <activity
+            android:name=".Ratings.Ratings"
+            android:exported="true" />
+
+        <activity
+            android:name=".Category.ui.petShop"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.DetailedItems"
+            android:exported="true" />
+        <activity
+            android:name=".Category.ui.DetailedPets"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
